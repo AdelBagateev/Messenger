@@ -62,7 +62,6 @@ class ViewHolder(
 
     fun bind(model: PeopleModel) {
         with(binding) {
-            tvMail.text = model.mail
             tvName.text = model.fullName
             ravAvatar.load(model.avatarUrl) {
                 placeholder(CommonR.drawable.ic_profile)
